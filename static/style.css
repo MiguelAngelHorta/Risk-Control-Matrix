@@ -1,0 +1,113 @@
+body {
+    background: #141516;
+    color: #fff;
+    padding-left: 10px;
+}
+
+/* Styling for table header */
+table th {
+    background-color: #1f2731;
+    color: #fff;
+    border-color: #fff; /* Change border color to white */
+}
+
+/* Styling for table rows */
+table td {
+    background-color: #393f45;
+    color: #fff;
+    border-color: white; /* Change border color to white */
+}
+
+
+/* Add this to your style.css file */
+.disabled-button {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* Highlight style for the edited row */
+table tbody tr.edit-highlight td {
+    background-color: #788ea8;
+    color: #000;
+}
+
+.btn-sm {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+}
+
+h2 {
+    color: #b3b2b2;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.add-button {
+    background-color: #4CAF50; /* Green color */
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Allow for positioning */
+    font-size: 16px;
+}
+
+.add-button:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+}
+
+.edit-button {
+    background-color: #e0c73a; /* Green color */
+    border: none;
+    color: rgb(7, 7, 7);
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Allow for positioning */
+    font-size: 16px;
+}
+
+.edit-button:hover {
+    background-color: #b7a22e; /* Darker green on hover */
+}
+
+.delete-button {
+    background-color: #d82a2a; /* Green color */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Allow for positioning */
+    font-size: 16px;
+}
+
+.delete-button:hover {
+    background-color: #820505; /* Darker green on hover */
+}
+
+.controls-button {
+    background-color: #b140c7; /* Green color */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Allow for positioning */
+    font-size: 16px;
+}
+
+.controls-button:hover {
+    background-color: #74297d; /* Darker green on hover */
+}
+
+.button-container {
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.controls-button, .add-button {
+    margin-right: 10px; /* Adjust the right margin between buttons as needed */
+}

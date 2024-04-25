@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Control</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <h2>Edit Control</h2>
+    <form method="POST" action="/update/{{ control['id'] }}">
+        <label for="name">Control Name:</label>
+        <input type="text" name="name" value="{{ control['name'] }}" required><br>
+        <label for="likelihood">Likelihood (1-5):</label>
+        <input type="number" name="likelihood" min="1" max="5" value="{{ control['likelihood'] }}" required><br>
+        <label for="impact">Impact (1-5):</label>
+        <input type="number" name="impact" min="1" max="5" value="{{ control['impact'] }}" required><br>
+        <button type="submit">Update Control</button>
+    </form>
+</body>
+</html>
