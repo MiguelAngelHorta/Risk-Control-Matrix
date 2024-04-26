@@ -5,7 +5,11 @@
     <link rel="stylesheet" type="text/css" href="/static/style.css">
 </head>
 <body>
-    <h1>Security Risk & Control Matrix</h1>
+    <h1>Security Risk & Controls</h1>
+    <h2>Risks</h2>
+    <div class="button-container">
+        <a href="/add_risk.html" class="add-button">+ Add a new Risk</a>
+    </div>
     <table>
         <thead>
             <tr>
@@ -13,29 +17,27 @@
                 <th>Risk Description</th>
                 <th>Likelihood (1-5)</th>
                 <th>Impact (1-5)</th>
-                <th>Risk Score</th>
+                <th>Risk Level</th>
+                <th>Controls</th>
                 <th>Actions</th>
             </tr>
         </thead>
         <tbody>
-            {% for control in controls %}
+            {% for risk in risks %}
             <tr>
-                <td>{{ control['id'] }}</td>
-                <td>{{ control['name'] }}</td>
-                <td>{{ control['likelihood'] }}</td>
-                <td>{{ control['impact'] }}</td>
-                <td>{{ control['risk_score'] }}</td>
+                <td>{{ risk['riskID'] }}</td>
+                <td>{{ risk['riskDescription'] }}</td>
+                <td>{{ risk['likelihood'] }}</td>
+                <td>{{ risk['impact'] }}</td>
+                <td>{{ risk['risk_level'] }}</td>
+                <td>{{ risk['controls'] }}</td>
                 <td>
-                    <a href="/update/{{ control['id'] }}" class="edit-button">Edit</a>
-                    <a href="/delete/{{ control['id'] }}" class="delete-button">Delete</a>
+                    <a href="/update/{{ risk['riskID'] }}" class="edit-button">Edit</a>
+                    <a href="/delete/{{ risk['riskID'] }}" class="delete-button">Delete</a>
                 </td>
             </tr>
             {% endfor %}
         </tbody>
-        <div class="button-container">
-            <a href="/add_control.html" class="controls-button">View Controls</a>
-            <a href="/add_control.html" class="add-button">+ Add a new Risk</a>
-        </div>
-        </table>
+    </table>
 </body>
 </html>

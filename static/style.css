@@ -1,35 +1,44 @@
 body {
     background: #141516;
     color: #fff;
-    padding-left: 10px;
+    margin: 0 auto;
+}
+
+/* Base styles for all screens */
+body {
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Styles for screens wider than 1200px */
+@media (min-width: 1200px) {
+  body {
+    width: 1000px; /* Adjust as needed for larger screens */
+  }
 }
 
 /* Styling for table header */
 table th {
     background-color: #1f2731;
     color: #fff;
-    border-color: #fff; /* Change border color to white */
+    border: 1px solid white; /* Set border to solid white */
+    padding: 5px; /* Add padding to provide more space around the text */
 }
 
+/* Styling for table rows */
 /* Styling for table rows */
 table td {
     background-color: #393f45;
     color: #fff;
-    border-color: white; /* Change border color to white */
+    border: 1px solid white; /* Set border to solid white */
+    padding: 5px; /* Add padding to provide more space around the text */
 }
 
 
-/* Add this to your style.css file */
-.disabled-button {
-    pointer-events: none;
-    opacity: 0.5;
-}
-
-/* Highlight style for the edited row */
-table tbody tr.edit-highlight td {
-    background-color: #788ea8;
-    color: #000;
-}
+table {
+    width: 100%; /* Adjust the percentage as needed (e.g., 100% for full width) */
+    border-collapse: collapse;
+  }
 
 .btn-sm {
     padding: 0.2rem 0.5rem;

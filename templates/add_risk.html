@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Risk</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <h2>Add New Risk</h2>
+    <form method="POST" action="/create">
+        <label for="riskDescription">Risk Description:</label>
+        <input type="text" name="riskDescription" required><br>
+        <label for="controls">Controls:</label>
+        <input type="text" name="controls" required><br>
+        <label for="likelihood">Likelihood (1-5):</label>
+        <input type="number" name="likelihood" min="1" max="5" required><br>
+        <label for="impact">Impact (1-5):</label>
+        <input type="number" name="impact" min="1" max="5" required><br>
+        <button type="submit">Add Risk</button>
+    </form>
+</body>
+</html>
