@@ -1,6 +1,8 @@
 # Risk-Control-Matrix
 This Flask web application helps manage security risks by allowing users to view, add, edit, and delete them along with their calculated severity levels.
 
+  - <img src="https://github.com/MiguelAngelHorta/MiguelAngelHorta/assets/106134627/53303ca1-6620-410b-945f-315385f7d1bc" alt="Screenshot" style="width: 700px; height: 300px; max-width: 100%; height: auto;">
+
 ## Dependencies
 - brew install python@3.9
 - curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
